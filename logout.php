@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	include"_config.php";
-	unset($_session["is_Login"]);
+	include"config.php";
+	unset($_SESSION["rid"]);
 	flash("Logout Succesfully","success");
-	header("Location:index.php");
+	header("Location:login.php");
 ?>
